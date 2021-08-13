@@ -201,7 +201,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1827953514,1774315810,1889254632, 1889254632}   
+sudo_users = {SUDO,1827953514,1774315810,1889254632,1208165035}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -299,6 +299,8 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
+if tonumber(user_id) == tonumber(1208165035) then  
+var = true 
 if tonumber(user_id) == tonumber(1774315810) then  
 var = true 
 elseif tonumber(user_id) == tonumber(1827953514) then
@@ -337,6 +339,8 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
+if tonumber(user_id) == tonumber(1208165035) then  
+var = 'مبرمج جميع السورسات'
 if tonumber(user_id) == tonumber(1774315810) then  
 var = 'المبـرمج أوسـكار ألـتونز'
 elseif tonumber(user_id) == tonumber(1827953514) then
@@ -1010,6 +1014,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽',url="t.me/AAHMEED11"}},
 {{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"}},
 {{text = '𖣘 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 𖣘',url="t.me/Xxx_ksomk_xxX"}},
 {{text = '𖣘 𝚃𝙾 𝙰𝚂𝙺 𖣘',url="t.me/J_a_b_w_a_bot"}}, 
@@ -1028,8 +1033,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'المبرمج طه',url="t.me/Xxx_ksomk_xxX"}}, 
-{{text = '𖣘 𝚃𝙾 𝙰𝚂𝙺 𖣘', url="t.me/J_a_b_w_a_bot"}},
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽',url="t.me/AAHMEED11"}},
+{{text = '𖣘 𝚃𝙾 𝙰𝚂𝙺 𖣘', url="t.me/E_H_M_BOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1075,6 +1080,7 @@ local Text = ' قسم مطورين السورس لدخول الي حسابتهم
 local Key = {
 {'━┅┅┄⟞⸢ مـطورين ألـسورس ⸥⟝┄┉┉━'},
 {'التواصل','عايز بوت','يا سورس'},
+{'المبرمج ماديسون'},
 {'جابوا','طه'},
 {'𝔟𝔞𝔠𝔨 ⚡'},
 }
@@ -1098,6 +1104,7 @@ end
 if DevSoFi(msg) then
 local bl = '☆'
 local keyboard = {
+{'المبرمج ماديسون'},
 {'قناة السورس','مـبــرمـج السـورس'},
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
@@ -1331,6 +1338,7 @@ if text == 'قسـم مـطـورين ومـبــرمـجـين السـورس'
 local Text = 'قسـم مـطـورين ومـبــرمـجـين السـورس لتوصـل مـعنا 🌚❤️'
 local Key = {
 {'╭──── ● «✯SAIDI✯» ● ────╮'},
+{'المبرمج ماديسون'},
 {'يا سورس','التواصل'},
 {'العوده🌟'},
 }
@@ -1539,7 +1547,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "توكن البوت" and SudoBot(msg) or text == 'جلب التوكن' and SudoBot(msg) then 
+if text == "توكن جابوا" and SudoBot(msg) or text == 'جلب التوكن' and SudoBot(msg) then 
 if not DevSoFi(msg) then
 send(msg.chat_id_, msg.id_,'هذا الامر خاص بمطور البوت')
 return false
@@ -1548,15 +1556,15 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.sender_user_id_ .. '&text=' ..token) 
 send(msg.chat_id_, msg.id_,' ') 
 end
-if text == 'طه مبرمج السورس' and DevSoFi(msg) then
+if text == 'ماديسون مبرمج السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-↝المبرمج طه لو حابب تتواصل معاه
+- للتواصل مع ماديسون مبرمج السورس اتبع الازرار ♡
 اتبع الزر إلى تحت ⩹━━━⊶❲«✯SAIDI✯»❳⊷━━━⩺↜
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𖣘 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 𖣘', url="t.me/Xxx_ksoml_xxX"}}, 
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽', url="t.me/AAHMEED11"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2094,10 +2102,10 @@ keyboard.inline_keyboard = {
 },
 {
 {text = 'اضف البوت الي مجموعتك 𖠕', url = "https://t.me/"..data.username_.."?startgroup=new"},
-},
+}
 }
 local msg_id = msg.id_/2097152/0.5
-local Texti = "٭ مرحبا انا بوت "..N.." \n↞ اختصاصي ادارة المجموعات من السبام والخ..\n↞ للتفعيل ارفعني مشرف وارسل تفعيل في المجموعه ."
+local Texti = "٭ مرحبا انا بوت "..N.." \n↞ اختصاصي ادارة المجموعات من السبام والاباحه.\n↞ للتفعيل ارفعني مشرف وارسل تفعيل في المجموعه ."
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Texti)..'&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end,nil)
@@ -3266,7 +3274,7 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 {{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘', url="t.me/Sadauam"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
@@ -3289,10 +3297,11 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽',url="t.me/AAHMEED11"}},
 {{text = '☾ 𝙹𝙰𝙱𝚆𝙰 ☽',url="t.me/J_A_B_W_A"},{text = '☾ 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 ☽', url="t.me/Xxx_ksomk_xxX"}},
 {{text = '☾ 𝚂𝙰𝙼𝙴𝙷 ☽',url="t.me/Sa_me_h"}},
 {{text = '☾ 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 ☽',url="t.me/Sadauam"}},
-{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3305,6 +3314,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽',url="t.me/AAHMEED11"}},
 {{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"},{text = '𖣘 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 𖣘', url="t.me/xxx_ksomk_xxx"}},
 {{text = '𖣘 𝚃𝙾 𝙰𝚂𝙺 𖣘',url="t.me/J_a_b_w_a_bot"}}, 
 {{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘 ', url="t.me/Sadauam"}},
@@ -3312,6 +3322,20 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == 'ماديسون'  or text == 'المبرمج ماديسون' then
+local Text = [[
+للتواصل مع المبرمج ماديسون ♡
+اتبع الزر إلى تحت 𖠪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽',url="t.me/AAHMEED11"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'طه'  then
@@ -3322,6 +3346,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𖣘 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 𖣘',url="t.me/Xxx_ksomk_xxX"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Xxx_ksomk_xxX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3335,6 +3360,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3348,6 +3374,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3388,6 +3415,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = '📖رواية" مقبرة الحيوانات""', url="https://t.me/Sadauam"}},
 {{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"}},
 {{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘', url="t.me/Sadauam"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
@@ -3425,6 +3453,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = '☾ 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ☽',url="t.me/AAHMEED11"}},
 {{text = 'طه مبرمج السورس',url="t.me/Xxx_ksomk_xxX"}},
 {{text = 'جابوا مبرمج السورس',url="t.me/J_A_B_W_A"}},
 {{text = 'سامح مالك السورس',url="t.me/Sa_me_h"}},
@@ -4353,7 +4382,7 @@ end
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
 end
-if text == '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘' then
+if text == '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸??𝙸 𖣘' then
 local Text = [[ 
  من أحسن السورسات على التليجرام سورس صعيدي 
 حمايه.سرعه.دقه وامان
@@ -4431,7 +4460,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'العاب باور' or text == 'العاب تارا' or text == 'العاب متطوره' then  
+if text == 'العاب السورس' or text == 'العاب' or text == 'عوز العاب' then  
 local Text = [[  
  اهلا في قائمه الالعاب المتطوره 
 تفضل اختر لعبه من القائمه 
@@ -4470,7 +4499,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. 
 end
 if text == 'العاب صعيدي' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
 local Text = [[  
- ☽ اهلا في قائمه الالعاب المتطوره سورس صعيدي ☽ 
+☽ اهلا في قائمه الالعاب المتطوره سورس صعيدي ☾
 تفضل اختر لعبه من القائمه 
 ]]  
 keyboard = {}   
@@ -4501,6 +4530,7 @@ keyboard.inline_keyboard = {
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
 {{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘', url="t.me/Sadauam"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/161&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5656,6 +5686,10 @@ if tonumber(result.sender_user_id_) == tonumber(1774315810) then
 send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1208165035) then  
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر مبرمج السورس عام")
+return false 
+end
 if tonumber(result.sender_user_id_) == tonumber(1827953514) then  
 send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر مبرمج السورس عام")
 return false 
@@ -5706,6 +5740,10 @@ if result.id_ == tonumber(1774315810) then
 send(msg.chat_id_, msg.id_, " ☽ لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
+if result.id_ == tonumber(1208165035) then
+send(msg.chat_id_, msg.id_, " ☽ لا يمكنك حظر مبرمج السورس \n")
+return false 
+end
 if result.id_ == tonumber(1827953514) then
 send(msg.chat_id_, msg.id_, "  لا يمكنك حظر مبرمج السورس \n")
 return false 
@@ -5747,6 +5785,10 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1774315810) then  
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر مبرمج السورس عام")
+return false 
+end
+if tonumber(userid) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5792,6 +5834,10 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1774315810) then  
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم مبرمج السورس عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5844,6 +5890,10 @@ if result.id_ == tonumber(1774315810) then
 send(msg.chat_id_, msg.id_, " ☽ لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
+if result.id_ == tonumber(1208165035) then
+send(msg.chat_id_, msg.id_, " ☽ لا يمكنك كتم مبرمج السورس \n")
+return false 
+end
 if result.id_ == tonumber(1827953514) then
 send(msg.chat_id_, msg.id_, " ☽ لا يمكنك كتم مبرمج السورس \n")
 return false 
@@ -5885,6 +5935,10 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1774315810) then  
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم مبرمج السورس عام")
+return false 
+end
+if tonumber(userid) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -12293,7 +12347,7 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
 'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي الكيوت '..Namebot..' ??💘',
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 'اسمي  '..Namebot..' يوتكه🙈🍑',
 'انت تعرف انو بوت  '..Namebot..'  متنصب علي سورس صعيديو🙈♥️',
